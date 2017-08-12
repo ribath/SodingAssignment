@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ribath.sodingassignment.ViewTaskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/dateLayout"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textView_created"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:text="Created"
+            android:lines="2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/textView_updated"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp"
+            android:gravity="right"
+            android:text="not updated"
+            android:lines="2"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateLayout"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:textColor="@color/headline"
+        android:textSize="30dp"
+        android:id="@+id/textView_name"
+        android:text="Name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_name"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:id="@+id/textView_description"
+        android:text="Description"/>
+
+</RelativeLayout>
